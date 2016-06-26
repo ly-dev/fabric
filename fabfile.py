@@ -1,7 +1,7 @@
 from fabric.api import *
 
-PACKAGE_MANAGER_INSTALL = "apt-get install %s"
-PACKAGE_MANAGER_UPDATE = "apt-get update"
+PACKAGE_MANAGER_INSTALL = "apt-get -qq -y install %s"
+PACKAGE_MANAGER_UPDATE = "apt-get -qq -y update"
 
 def hello():
     run('echo "hello from `hostname`"')
